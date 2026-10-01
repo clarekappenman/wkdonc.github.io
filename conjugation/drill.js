@@ -400,15 +400,25 @@ function generateQuestion() {
   var kanaForms = forms["hiragana"];
   var furiganaForms = forms["furigana"];
 
-  var candidates;
+var candidates;
 
-  if (options["kana"]) {
-    candidates = kanaForms[from_form];
-  } else {
-    candidates = wordWithFurigana(furiganaForms[from_form]);
-  }
+if (options["kana"]) {
+  candidates = kanaForms[from_form];
+} else {
+  candidates = wordWithFurigana(furiganaForms[from_form]);
+}
 
-  var candidateIndex = Math.floor(Math.random() * candidates.length);
+// For na-adjectives, only show the ではありません / じゃありません
+// forms when the question is a polite negative.
+var candidateIndex;
+
+if (words[entry].group == "na-adjective" &&
+    (from_form == "polite negative" ||
+     from_form == "polite past negative")) {
+  candidateIndex = 2 + Math.floor(Math.random() * 2);
+} else {
+  candidateIndex = Math.floor(Math.random() * candidates.length);
+}
 
   var givenWord = candidates[candidateIndex];
   var givenWordAsKanji = kanjiForms[from_form][candidateIndex];
