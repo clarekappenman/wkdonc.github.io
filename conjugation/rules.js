@@ -68,7 +68,26 @@ var words = {
   "便利":       { "group": "na-adjective", "dictionary": "便[べん]利[り]だ", },
   "上手":       { "group": "na-adjective", "dictionary": "上[じょう]手[ず]だ", },
   "幸い":       { "group": "na-adjective", "dictionary": "幸[さいわ]いだ", },
+
+  "大丈夫":     { "group": "na-adjective", "dictionary": "大[だい]丈[じょう]夫[ぶ]だ", },
+  "きれい":     { "group": "na-adjective", "dictionary": "きれいだ", },
+  "親切":       { "group": "na-adjective", "dictionary": "親[しん]切[せつ]だ", },
+  "得意":       { "group": "na-adjective", "dictionary": "得[とく]意[い]だ", },
+  "嫌い":       { "group": "na-adjective", "dictionary": "嫌[きら]いだ", },
+  "残念":       { "group": "na-adjective", "dictionary": "残[ざん]念[ねん]だ", },
+  "駄目":       { "group": "na-adjective", "dictionary": "駄[だ]目[め]だ", },
+  "賑やか":     { "group": "na-adjective", "dictionary": "賑[にぎ]やかだ", },
+  "暇":         { "group": "na-adjective", "dictionary": "暇[ひま]だ", },
+  "素敵":       { "group": "na-adjective", "dictionary": "素[す]敵[てき]だ", },
+  "丈夫":       { "group": "na-adjective", "dictionary": "丈[じょう]夫[ぶ]だ", },
+  "大好き":     { "group": "na-adjective", "dictionary": "大[だい]好[す]きだ", },
+  "下手":       { "group": "na-adjective", "dictionary": "下[へ]手[た]だ", },
+  "苦手":       { "group": "na-adjective", "dictionary": "苦[にが]手[て]だ", },
+  "大嫌い":     { "group": "na-adjective", "dictionary": "大[だい]嫌[きら]いだ", },
+  "邪魔":       { "group": "na-adjective", "dictionary": "邪[じゃ]魔[ま]だ", },
+  "大変":       { "group": "na-adjective", "dictionary": "大[たい]変[へん]だ", },
 };
+
 
 var rules = {
 
