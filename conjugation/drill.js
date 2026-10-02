@@ -434,9 +434,15 @@ if (words[entry].group == "na-adjective" &&
     (from_form == "polite negative" ||
      from_form == "polite past negative")) {
   candidateIndex = 2 + Math.floor(Math.random() * 2);
+} else if ((words[entry].group == "i-adjective" ||
+            words[entry].group == "ii") &&
+           (from_form == "polite negative" ||
+            from_form == "polite past negative")) {
+  candidateIndex = 0;
 } else {
   candidateIndex = Math.floor(Math.random() * candidates.length);
 }
+
 
   var givenWord = candidates[candidateIndex];
   var givenWordAsKanji = kanjiForms[from_form][candidateIndex];
