@@ -370,7 +370,25 @@ function generateQuestion() {
     }
 
     entry = Object.keys(words).randomElement();
-    transformation = transformations.randomElement();
+	  
+    if (getOptions()["questionFocus"] == "none") {
+  var transformationTypes = arrayUnique(
+    transformations.map(function (t) {
+      return t.type;
+    })
+  );
+
+  var selectedType = transformationTypes.randomElement();
+
+  var typeTransformations = transformations.filter(function (t) {
+    return t.type == selectedType;
+  });
+
+  transformation = typeTransformations.randomElement();
+} else {
+  transformation = transformations.randomElement();
+}
+
 
     from_form = transformation.from;
     to_form = transformation.to;
