@@ -89,7 +89,7 @@ var words = {
   "嬉しい":     { "group": "i-adjective",  "dictionary": "嬉[うれ]しい", },
   "多い":       { "group": "i-adjective",  "dictionary": "多[おお]い", },
   "軽い":       { "group": "i-adjective",  "dictionary": "軽[かる]い", },
-  "四角い":     { "group": "i-adjective",  "dictionary": "四角[しかく]い", },
+  "四角い": { "group": "i-adjective", "dictionary": "四[し]角[かく]い", },
   "少ない":     { "group": "i-adjective",  "dictionary": "少[すく]ない", },
   "丸い":       { "group": "i-adjective",  "dictionary": "丸[まる]い", },
   "痛い":       { "group": "i-adjective",  "dictionary": "痛[いた]い", },
