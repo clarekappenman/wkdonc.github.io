@@ -1216,7 +1216,9 @@ function calculateConjugations(word, conjugation) {
       result.forms.push(rule.result);
     }
   });
-
+if (word === "四角い" && conjugation === "polite past") {
+  console.log("四角い polite past:", result.forms);
+}
   return result;
 }
 
