@@ -121,12 +121,13 @@ function resetLog() {
 }
 
 function kanaForm(words) {
-
-  if (words.constructor !== Array) {
+  if (!Array.isArray(words)) {
     words = [words];
   }
 
-  return words.map(function (word) { return word.split(/.\[([^\]]*)\]/).join(""); });
+  return words.map(function (word) {
+    return word.replace(/.\[([^\]]*)\]/g, "$1");
+  });
 }
 
 function kanjiForm(words) {
